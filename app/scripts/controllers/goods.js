@@ -8,7 +8,7 @@ module.config(function($routeProvider) {
     })
 });
 
-module.controller('GoodsCtrl', function($location, $rootScope, $scope, $http, $routeParams, nxt, plugins, 
+module.controller('GoodsCtrl', function($location, $translate, $rootScope, $scope, $http, $routeParams, nxt, plugins, 
   shoppingCartService, AllGoodsProvider, PastGoodsProvider, GoodsDetailsProvider, UserGoodsProvider, 
   SoldGoodsProvider, DeliveryConfirmedGoodsProvider, Gossip, db) {
 
@@ -133,7 +133,7 @@ module.controller('GoodsCtrl', function($location, $rootScope, $scope, $http, $r
     var result = (new BigInteger(nxt.util.convertToNQT($scope.totalNXT))).compareTo(
                     new BigInteger(nxt.util.convertToNQT($rootScope.userData.balanceNXT)));
     if (result <= 0) {
-      $scope.balanceError = "You don't have enough balance to place these orders.";
+      $scope.balanceError = $translate.instant('translate.not_enough_balance');
     }
     else {
       $scope.balanceError = ' ';
@@ -174,7 +174,7 @@ module.controller('GoodsCtrl', function($location, $rootScope, $scope, $http, $r
                 }
                 else {
                   $scope.$evalAsync(function () {
-                    $scope.successful = "Payment Completed";
+                    $scope.successful = $translate.instant('translate.payment_completed');
                   });
                 }
               }              
