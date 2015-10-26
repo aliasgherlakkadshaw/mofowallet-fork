@@ -304,7 +304,19 @@
     "decrypt_message":      "Decrypt Message",
     "no_messages":          "No Messages to Decrypt",
     "confirm_delivery":     "Confirm Delivery",
-    "marketplace":          "Marketplace"
+    "marketplace":          "Marketplace",
+    "follow_account":       "Follow account",
+    "follow_acc_question":  "Do you want to follow this account?<br>By following this account it will be added to your dashboard.",
+    "unfollow_account":     "Unfollow account",
+    "unfollow_acc_question":"Are you sure you want to unfollow this account?<br>By un following this account it will be removed from your dashboard.",
+    "transaction_details":  "Transaction details",
+    "transaction_order":    "timestamp,senderRS,recipientRS,amountNQT,attachment,type,feeNQT",
+    "asset_details":        "Asset details",
+    "assets_orders":        "name,asset,numberOfTrades,description,quantityQNT,decimals,accountRS",
+    "save_key":             "Save key",
+    "save_key_message":     "Do you want to save this encrypted key in your browser?",
+    "remove_contact":       "Remove contact",
+    "remove_contact_message":"Do you want to remove this contact? Removal cannot be undone."
   },
 
   "time": {
