@@ -383,7 +383,7 @@
                     <!-- <th>Seller</th> -->
                     <th>{{'translate.goods_quantity' | translate}}</th>
                     <th translate="translate.goods_price" translate-values="{symbol:symbol}"></th>
-                    <th ng-if="currentAccount"></th>
+                  <!--  <th ng-if="currentAccount"></th> -->
                     <th ng-if="currentAccount"></th>
                     <th ng-if="decryptedMessage && currentAccount">{{'translate.message_from_buyer' | translate}}</th>
                   </tr>
@@ -396,7 +396,7 @@
                     <!-- <td>{{orders.sellerRS}}  <a href="" ng-click="msg(orders.sellerRS)">message</a></td> -->
                     <td>{{orders.quantity}}</td>
                     <td>{{orders.priceNXT}}</td>
-                    <td ng-if="currentAccount"><button class="btn btn-primary" ng-click="rebate(orders)">{{'translate.refund' | translate}}</button></td>
+                   <!-- <td ng-if="currentAccount"><button class="btn btn-primary" ng-click="rebate(orders)">{{'translate.refund' | translate}}</button></td> -->
                     <td ng-if="currentAccount">
                       <button class="btn btn-primary" ng-if="orders.note" ng-click="decrypt(orders.note, $index)">{{'translate.decrypt_message' | translate}}</button>
                       <label ng-if="!orders.note">{{'translate.no_messages' | translate}}</label>
